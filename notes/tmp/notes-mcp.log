@@ -1,0 +1,120 @@
+2025-09-05 15:04:32,355 INFO Processing request of type ListResourcesRequest
+2025-09-05 15:04:39,925 INFO Processing request of type ListToolsRequest
+2025-09-05 15:05:41,433 INFO Processing request of type CallToolRequest
+2025-09-05 15:05:41,433 INFO Received: title=learn system design, content=learn about Scaling proxy, tags=['learn'], due_date=
+2025-09-05 15:05:41,461 INFO Creating note with title: learn system design, content: learn about Scaling proxy, tags: ['learn'], due_date: 
+2025-09-05 15:06:10,217 INFO Processing request of type CallToolRequest
+2025-09-05 15:06:10,218 INFO Received: title=learn system design, content=learn about Scaling proxy, tags=['learn'], due_date=2025-09-08
+2025-09-05 15:06:10,227 INFO Creating note with title: learn system design, content: learn about Scaling proxy, tags: ['learn'], due_date: 2025-09-08
+2025-09-05 15:09:37,045 INFO Processing request of type ListToolsRequest
+2025-09-05 15:09:37,046 INFO Processing request of type ListPromptsRequest
+2025-09-05 15:09:43,840 INFO Processing request of type ListToolsRequest
+2025-09-05 15:09:43,841 INFO Processing request of type ListPromptsRequest
+2025-09-05 15:10:40,948 INFO Processing request of type CallToolRequest
+2025-09-05 15:10:40,949 INFO Received: title=learn mcp, content=This note is about learning the Model Context Protocol (MCP) and its applications in AI and LLMs., tags=['ai', 'mcp', 'llm'], due_date=2025-09-10
+2025-09-05 15:10:40,958 INFO Creating note with title: learn mcp, content: This note is about learning the Model Context Protocol (MCP) and its applications in AI and LLMs., tags: ['ai', 'mcp', 'llm'], due_date: 2025-09-10
+2025-09-05 15:12:02,779 INFO Processing request of type CallToolRequest
+2025-09-05 15:12:02,779 INFO Received: title=grocery, content=This note is about planning and organizing the weekly grocery shopping., tags=['shoping', 'weekly'], due_date=2025-09-07
+2025-09-05 15:12:02,789 INFO Creating note with title: grocery, content: This note is about planning and organizing the weekly grocery shopping., tags: ['shoping', 'weekly'], due_date: 2025-09-07
+2025-09-05 15:14:10,438 INFO Processing request of type ListToolsRequest
+2025-09-05 15:14:16,442 INFO Processing request of type ListResourcesRequest
+2025-09-05 15:14:20,746 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:14:20,756 ERROR Error reading resource notes://get_all
+Traceback (most recent call last):
+  File "C:\learning\code\mcp\notes\.venv\Lib\site-packages\mcp\server\fastmcp\resources\types.py", line 58, in read
+    result = self.fn()
+  File "C:\learning\code\mcp\notes\.venv\Lib\site-packages\pydantic\_internal\_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+  File "C:\learning\code\mcp\notes\.venv\Lib\site-packages\pydantic\_internal\_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+  File "C:\learning\code\mcp\notes\main.py", line 85, in get_notes
+    cursor = conn.cursor(cursor_factory=DictCursor)
+                                        ^^^^^^^^^^
+NameError: name 'DictCursor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\learning\code\mcp\notes\.venv\Lib\site-packages\mcp\server\fastmcp\server.py", line 335, in read_resource
+    content = await resource.read()
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\learning\code\mcp\notes\.venv\Lib\site-packages\mcp\server\fastmcp\resources\types.py", line 72, in read
+    raise ValueError(f"Error reading resource {self.uri}: {e}")
+ValueError: Error reading resource notes://get_all: name 'DictCursor' is not defined
+2025-09-05 15:15:39,520 INFO Processing request of type ListResourcesRequest
+2025-09-05 15:15:42,340 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:16:02,868 INFO Processing request of type ListToolsRequest
+2025-09-05 15:16:02,869 INFO Processing request of type ListPromptsRequest
+2025-09-05 15:16:14,640 INFO Processing request of type ListResourceTemplatesRequest
+2025-09-05 15:16:14,641 INFO Processing request of type ListResourcesRequest
+2025-09-05 15:16:17,679 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:16:17,690 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:16:39,576 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:18:38,010 INFO Processing request of type ListResourcesRequest
+2025-09-05 15:18:41,987 INFO Processing request of type ListToolsRequest
+2025-09-05 15:18:46,484 INFO Processing request of type ListResourceTemplatesRequest
+2025-09-05 15:19:08,530 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:19:24,166 INFO Processing request of type ListToolsRequest
+2025-09-05 15:19:24,166 INFO Processing request of type ListPromptsRequest
+2025-09-05 15:19:29,183 INFO Processing request of type ListResourceTemplatesRequest
+2025-09-05 15:19:29,183 INFO Processing request of type ListResourcesRequest
+2025-09-05 15:19:31,232 INFO Processing request of type CompleteRequest
+2025-09-05 15:19:34,936 INFO Processing request of type CompleteRequest
+2025-09-05 15:19:35,767 INFO Processing request of type CompleteRequest
+2025-09-05 15:19:36,575 INFO Processing request of type CompleteRequest
+2025-09-05 15:19:37,220 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:19:37,240 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:19:37,248 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:19:48,750 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:19:48,764 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:19:48,772 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:19:48,886 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:20:00,769 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:20:00,791 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:22:23,227 INFO Processing request of type ListToolsRequest
+2025-09-05 15:22:23,228 INFO Processing request of type ListPromptsRequest
+2025-09-05 15:22:40,171 INFO Processing request of type ListToolsRequest
+2025-09-05 15:23:04,587 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:23:04,599 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:23:04,624 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:23:04,633 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:23:04,645 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:23:04,653 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:24:04,400 INFO Processing request of type CallToolRequest
+2025-09-05 15:24:33,795 INFO meta=None role='assistant' content=TextContent(type='text', text='{\n  "title": "Book Flights for Conference to Chicago",\n  "content": "Research and book round-trip flights to Chicago for the upcoming conference. Compare prices, check for convenient flight times, and ensure baggage policies meet requirements. Confirm booking and save all travel details for reference.",\n  "tags": ["travel", "conference", "flights", "Chicago", "booking"],\n  "due_date": "2024-07-10"\n}', annotations=None, meta=None) model='copilot/gpt-4.1' stopReason=None
+2025-09-05 15:24:33,796 INFO text
+2025-09-05 15:24:33,796 INFO {
+  "title": "Book Flights for Conference to Chicago",
+  "content": "Research and book round-trip flights to Chicago for the upcoming conference. Compare prices, check for convenient flight times, and ensure baggage policies meet requirements. Confirm booking and save all travel details for reference.",
+  "tags": ["travel", "conference", "flights", "Chicago", "booking"],
+  "due_date": "2024-07-10"
+}
+2025-09-05 15:24:33,796 INFO {'title': 'Book Flights for Conference to Chicago', 'content': 'Research and book round-trip flights to Chicago for the upcoming conference. Compare prices, check for convenient flight times, and ensure baggage policies meet requirements. Confirm booking and save all travel details for reference.', 'tags': ['travel', 'conference', 'flights', 'Chicago', 'booking'], 'due_date': '2024-07-10'}
+2025-09-05 15:24:33,796 INFO Received: title=Book Flights for Conference to Chicago, content=Research and book round-trip flights to Chicago for the upcoming conference. Compare prices, check for convenient flight times, and ensure baggage policies meet requirements. Confirm booking and save all travel details for reference., tags=['travel', 'conference', 'flights', 'Chicago', 'booking'], due_date=None
+2025-09-05 15:24:33,802 INFO Creating note with title: Book Flights for Conference to Chicago, content: Research and book round-trip flights to Chicago for the upcoming conference. Compare prices, check for convenient flight times, and ensure baggage policies meet requirements. Confirm booking and save all travel details for reference., tags: ['travel', 'conference', 'flights', 'Chicago', 'booking'], due_date: None
+2025-09-05 15:24:33,806 INFO Note created: {'title': 'Book Flights for Conference to Chicago', 'content': 'Research and book round-trip flights to Chicago for the upcoming conference. Compare prices, check for convenient flight times, and ensure baggage policies meet requirements. Confirm booking and save all travel details for reference.', 'tags': ['travel', 'conference', 'flights', 'Chicago', 'booking'], 'due_date': None}
+2025-09-05 15:26:09,724 INFO Processing request of type ListToolsRequest
+2025-09-05 15:26:09,725 INFO Processing request of type ListPromptsRequest
+2025-09-05 15:26:29,598 INFO Processing request of type ListPromptsRequest
+2025-09-05 15:26:42,461 INFO Processing request of type GetPromptRequest
+2025-09-05 15:27:10,728 INFO Processing request of type ListToolsRequest
+2025-09-05 15:27:10,728 INFO Processing request of type ListPromptsRequest
+2025-09-05 15:27:15,850 INFO Processing request of type ListPromptsRequest
+2025-09-05 15:27:25,682 INFO Processing request of type GetPromptRequest
+2025-09-05 15:27:57,858 INFO Processing request of type CompleteRequest
+2025-09-05 15:28:02,295 INFO Processing request of type CompleteRequest
+2025-09-05 15:28:02,877 INFO Processing request of type CompleteRequest
+2025-09-05 15:28:03,175 INFO Processing request of type CompleteRequest
+2025-09-05 15:28:04,225 INFO Processing request of type CompleteRequest
+2025-09-05 15:28:04,587 INFO Processing request of type GetPromptRequest
+2025-09-05 15:28:10,107 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:28:10,119 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:28:10,129 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:28:10,136 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:28:10,241 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:28:10,250 INFO Processing request of type ReadResourceRequest
+2025-09-05 15:39:46,953 INFO Processing request of type ListToolsRequest
+2025-09-05 15:39:46,954 INFO Processing request of type ListToolsRequest
+2025-09-05 15:39:49,530 INFO Processing request of type CallToolRequest
+2025-09-05 15:39:49,530 INFO Received: title=Buy miter saw, content=miter saw to make angle cuts, tags=['wood_work', 'learning', 'hobby'], due_date=2025-09-09
+2025-09-05 15:39:49,538 INFO Creating note with title: Buy miter saw, content: miter saw to make angle cuts, tags: ['wood_work', 'learning', 'hobby'], due_date: 2025-09-09

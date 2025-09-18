@@ -1,0 +1,15 @@
+{
+	"servers": {
+		"notes-server": {
+			"type": "stdio",
+			"command": "uv",
+			"args": [
+				"--directory",
+				"C:/learning/code/mcp/notes",
+				"run",
+				"main.py"
+			]
+		}
+	},
+	"inputs": []
+}
