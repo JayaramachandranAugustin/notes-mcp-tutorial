@@ -1,4 +1,4 @@
-Video Tutorial - https://youtu.be/XmLAJXERNNA
+Video Tutorial - [Link](https://youtu.be/kB9Ejt8c8yo)
 
 \## Docker compose
 
